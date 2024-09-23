@@ -1,0 +1,49 @@
+import { Box, Image, Text } from "components";
+import { LocalizationContext } from "libs/context";
+import { useContext } from "react";
+import styles from "../../layout/styles";
+
+export default function () {
+  const I18n = useContext(LocalizationContext);
+  return (
+    <Box flex>
+      {/* Content */}
+      <Box
+        center
+        flex
+      >
+        <Image
+          source={require("@images/intro-app/community-reward.png")}
+          style={styles.backgroundImageStyle}
+        />
+        <Text
+          bold
+          center
+          variant="h2"
+          color="primary"
+          style={styles.txtLabel}
+        >
+          {I18n.t("INTRO_APP.COMMUNITY_REWARD")}
+        </Text>
+        <Box
+          margin="l"
+          center
+        >
+          <Text
+            center
+            style={styles.txtContent}
+          >
+            {I18n.t("INTRO_APP.COMMUNITY_REWARD_1")}
+          </Text>
+          <Text
+            center
+            style={styles.txtContent}
+          >
+            {I18n.t("INTRO_APP.COMMUNITY_REWARD_2")}
+          </Text>
+        </Box>
+      </Box>
+      {/* End content */}
+    </Box>
+  );
+}

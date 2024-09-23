@@ -1,0 +1,52 @@
+/**
+ * @author QuanNguyen
+ * @email [quan.nguyen@btaskee.com]
+ * @create date 2022-10-11 17:00:42
+ * @modify date 2022-10-11 17:00:42
+ * @desc [Tasker cancel task OFFICE_CLEANING vietnam]
+ * case 1: Tasker cancel task not fee
+ * case 2: Tasker cancel task have fee
+ * case 3: Tasker cancel task with other reason
+ * case 4: Tasker cancel task and status task change to POSTED
+ * case 5: Tasker cancel task and status task change to CANCELED
+ */
+
+const {
+  tapId,
+  expectElementVisible,
+  initData,
+  waitForElement,
+  swipe,
+  expectElementNotExist,
+} = require("../../../step-definitions");
+
+describe("FILE: vietnam/flow-test/cancel-task/tasker-cancel-task-OFFICE_CLEANING-vn.spec.js - Tasker cancel task OFFICE_CLEANING vn", () => {
+  beforeEach(async () => {
+    await device.launchApp();
+    await initData("update-user/financialAccount", {
+      phone: "0834567813",
+      isoCode: "VN",
+      financialAccountData: { FMainAccount: 100000, Promotion: 1000 },
+    });
+    await initData("update-user/unset-fields", { phone: "0834567813", isoCode: "VN", fields: ["taskCancelByTasker"] });
+  });
+
+  //  Tasker Không huỷ được task office cleaning
+  it("LINE 35 - Tasker cant cancel task office cleaning", async () => {
+    await initData("vn/task/createTask", {
+      resetCollection: true,
+      serviceName: "OFFICE_CLEANING",
+      viewedTaskers: ["0834567813"],
+      description: "My Task",
+      acceptedTasker: "0834567813",
+    });
+    await device.reloadReactNative();
+    await waitForElement("TabMyTask", 1000);
+    await tapId("TabMyTask");
+    await waitForElement("weekdays_1", 500);
+    await tapId("weekdays_1");
+    await tapId("confirmTask_My Task");
+    await swipe("scrollTaskDetail", "up");
+    await expectElementVisible("btn_cancel");
+  });
+});

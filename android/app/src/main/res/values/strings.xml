@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">@string/APP_NAME</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">@string/CODE_PUSH_API_KEY_ANDROID</string>
+    <color name="primary_color">#4250af</color>
+    <string name="default_notification_channel_id">Task_Partner</string>
+</resources>

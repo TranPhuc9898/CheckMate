@@ -1,0 +1,6 @@
+module Pods_btaskeePartner {
+  umbrella header "Pods-btaskeePartner-umbrella.h"
+
+  export *
+  module * { export * }
+}

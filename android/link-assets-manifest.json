@@ -1,0 +1,53 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Kanit-Bold.ttf",
+      "sha1": "4d376a5447efe2ece1e3e39ff0fc2bbf3af0e5f8"
+    },
+    {
+      "path": "src/assets/fonts/Kanit-BoldItalic.ttf",
+      "sha1": "a515d96e8b0ae666c180ff853f07282647cce78b"
+    },
+    {
+      "path": "src/assets/fonts/Kanit-Light.ttf",
+      "sha1": "5f73684474721ddfc98168f5b8a634d7552e89d4"
+    },
+    {
+      "path": "src/assets/fonts/Kanit-LightItalic.ttf",
+      "sha1": "bfa800d600db0d72fda285fceaa2e0b5234f2faf"
+    },
+    {
+      "path": "src/assets/fonts/Kanit-Medium.ttf",
+      "sha1": "61ac6e618ea64ca7f4ae2444194e0bad4c72c8f9"
+    },
+    {
+      "path": "src/assets/fonts/Kanit-MediumItalic.ttf",
+      "sha1": "d4efe4ef0132a00a569ddcfb7bc292062fcd96ba"
+    },
+    {
+      "path": "src/assets/fonts/inter-bold-italic.otf",
+      "sha1": "8774206d7703bfe27f6d5302e5385983c26e13a1"
+    },
+    {
+      "path": "src/assets/fonts/inter-bold.otf",
+      "sha1": "892e9a770a5340e46c9c7d9f25fa2699d9275923"
+    },
+    {
+      "path": "src/assets/fonts/inter-light-Italic.otf",
+      "sha1": "6716c0590ef33f9ca0155cd5c5d99f8ca90b5834"
+    },
+    {
+      "path": "src/assets/fonts/inter-light.otf",
+      "sha1": "c89f3036b53490be4b25d15e9a3cd4caf3e67d0c"
+    },
+    {
+      "path": "src/assets/fonts/inter-nomal-italic.otf",
+      "sha1": "1d8db12a427db7418be418b77bafb9a916ac0534"
+    },
+    {
+      "path": "src/assets/fonts/inter-nomal.ttf",
+      "sha1": "03f5c0ff412bc0aac7ef2c1e19edcbdd9b06a609"
+    }
+  ]
+}

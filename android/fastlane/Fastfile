@@ -1,0 +1,43 @@
+/**
+ * @author Duc Anh Pham
+ * @email ducanh.pham@btaskee.com
+ * @create date 2022-11-17 17:34
+ * @modify date 2022-11-17 17:34
+ * @desc fastlane Android
+ */
+
+fastlane_version "2.58.0"
+
+default_platform :android
+
+platform :android do
+  before_all do
+    ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
+    sh "cd ../.. && ./fastlane-clean.sh android"
+  end
+
+  desc "---------------Submit a new Beta Build to Play Store Beta---------------"
+  lane :beta do
+    gradle(task: "assembleRelease")
+    
+    # use Google Play beta
+    supply(
+      track: 'beta',
+      skip_upload_metadata:true,
+      skip_upload_images:true
+    )
+  end
+
+  after_all do |lane|
+    slack(
+      message: "Successfully deployed new bTaskee Partner Version 3 Android App Update."
+    )
+  end
+
+  error do |lane, exception|
+    slack(
+      message: exception.message,
+      success: false
+    )
+  end
+end

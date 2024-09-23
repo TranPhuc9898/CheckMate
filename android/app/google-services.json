@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "120568609768",
+    "project_id": "btaskee-tasker-test",
+    "storage_bucket": "btaskee-tasker-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120568609768:android:d6899c62ec38d61278425d",
+        "android_client_info": {
+          "package_name": "com.btaskee.partner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120568609768-ifhqcur5imj2ibd0n2o7uuge83717fdq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFU0yI9ISUNbvb7ZFV5GUgR4HaEbKoDlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120568609768-ifhqcur5imj2ibd0n2o7uuge83717fdq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "120568609768-t9mfvsgpadmqv29sooi0qnd0668q0hvt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.btaskee.partner"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

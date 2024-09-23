@@ -1,0 +1,14 @@
+export { default as CustomerDetail } from "./customer";
+export { default as Address } from "./address";
+export { default as Requirements } from "./requirements";
+export { default as TaskNote } from "./notes";
+export { default as CountdownDetail } from "./countdown";
+export { default as AvgRatingAsker } from "./avg-rating";
+export { default as TypeHouseAndDuration } from "./duration-and-type-house";
+export { default as FooterTaskDetail } from "./footer-button";
+export { default as TetBooking } from "./tet-booking";
+export { default as NoteForNewAsker } from "./new-asker-note";
+export { default as BCare } from "./bCare";
+export { default as NumberTaskerAcceptedTask } from "./number-tasker-accept-task";
+export { default as OftenUseService } from "./asker-often-use-service";
+export { default as WorkedForAsker } from "./worked-for-asker";

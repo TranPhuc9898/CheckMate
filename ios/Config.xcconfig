@@ -1,0 +1,10 @@
+//
+//  Config.xcconfig
+//  btaskeePartner
+//
+//  Created by DucAnh on 02/02/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include? "tmp.xcconfig"
