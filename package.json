@@ -35,7 +35,7 @@
     "@rneui/base": "4.0.0-rc.6",
     "@rneui/themed": "4.0.0-rc.6",
     "@types/react-native-snap-carousel": "3.8.5",
-    "axios": "0.27.2",
+    "axios": "1.8.2",
     "clevertap-react-native": "1.1.1",
     "i18n-js": "4.1.1",
     "lodash": "4.17.21",
