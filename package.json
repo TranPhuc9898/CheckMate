@@ -38,7 +38,7 @@
     "axios": "0.27.2",
     "clevertap-react-native": "1.1.1",
     "i18n-js": "4.1.1",
-    "lodash": "4.17.21",
+    "lodash": "4.17.23",
     "lottie-react-native": "5.1.5",
     "moment": "2.29.4",
     "moment-timezone": "0.5.37",
